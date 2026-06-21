@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jenner Reed | Stories Worth Falling Into</title>
+<link rel="icon" type="image/png" href="wax-stamp.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Page-specific: sparkle ambiance + newsletter input */
+  .sparkle { position:absolute; width:5px; height:5px; background:var(--gold-deep); border-radius:50%; opacity:0; animation:sparkle 4s ease-in-out infinite; }
+  @keyframes sparkle { 0%,100%{opacity:0;transform:scale(0)} 50%{opacity:0.6;transform:scale(1)} }
+  .nl-input {
+    flex:1; min-width:220px; padding:14px 20px; border-radius:30px; border:1.5px solid var(--gold-deep);
+    background:var(--white); color:var(--ink); font-family:var(--sans); font-size:14px; outline:none;
+  }
+  .nl-input::placeholder { color:var(--mauve); }
+  .nl-input:focus { border-color:var(--burgundy); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo-wrap">
+    <img src="wax-stamp.png" alt="Jenner Reed" class="nav-logo-img">
+    <span class="nav-logo-text">Jenner Reed</span>
+  </a>
+  <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="books.html">Books</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1">
+    <div class="sparkle" style="top:18%;left:12%;animation-delay:0s"></div>
+    <div class="sparkle" style="top:35%;left:82%;animation-delay:0.8s"></div>
+    <div class="sparkle" style="top:65%;left:22%;animation-delay:1.6s"></div>
+    <div class="sparkle" style="top:28%;left:68%;animation-delay:2.2s"></div>
+    <div class="sparkle" style="top:55%;left:48%;animation-delay:0.4s"></div>
+    <div class="sparkle" style="top:12%;left:55%;animation-delay:1.2s"></div>
+    <div class="sparkle" style="top:75%;left:75%;animation-delay:1.8s"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-logo">
+      <img src="tagline.png" alt="Jenner Reed — Stories Worth Falling Into">
+    </div>
+    <p class="hero-subtitle">Romance author writing love stories with laugh-out-loud banter, swoon-worthy chemistry, and the kind of happily-ever-afters worth falling into.</p>
+    <div class="hero-buttons">
+      <a href="books.html" class="btn btn-primary">Explore My Books</a>
+      <a href="newsletter.html" class="btn btn-outline">Join the Newsletter</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED BOOK -->
+<section class="featured-book">
+  <h2 class="section-title">Latest <span>Release</span></h2>
+  <div class="section-divider"></div>
+  <div class="book-card">
+    <div class="book-cover">
+      <img src="si-cover.png" alt="Snowed Inn — A Winterhaven Romance by Jenner Reed">
+    </div>
+    <div class="book-info">
+      <span class="book-badge">Re-Releasing July 25th</span>
+      <h3>Snowed Inn</h3>
+      <p class="book-series">A Winterhaven Holiday Romance</p>
+      <p>Welcome to Winterhaven, where everyone knows your business before you do. When a freak snowstorm leaves overworked city girl Maxine Stewart stranded in a village that takes holiday cheer to professional levels, she starts having very unprofessional thoughts about the local grump.</p>
+      <p>Tree farmer Brody Winter had his life figured out: keep his head down, take care of his community, and never risk the kind of love that destroys. Then a feisty little redhead twirls in like a candy-cane scented tornado, and suddenly, quiet nights alone by the fire seem incredibly overrated.</p>
+      <a href="books.html" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="about-preview-section">
+  <h2 class="section-title">Meet <span>Jenner</span></h2>
+  <div class="section-divider"></div>
+  <div class="about-grid">
+    <p style="font-family:var(--serif);font-size:22px;font-style:italic;color:var(--ink);">Writer of fearless women, irresistible men, and love stories worth falling into.</p>
+    <div class="about-tags">
+      <span class="about-tag">&#128218; Romcom Author</span>
+      <span class="about-tag">&#128248; Bookstagram</span>
+      <span class="about-tag">&#128049; Cat Mom</span>
+      <span class="about-tag">&#127881; Holiday Romance</span>
+    </div>
+    <div style="margin-top:32px">
+      <a href="about.html" class="btn btn-outline">More About Me &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <h2 class="section-title">Stay in the <span>Loop</span></h2>
+  <div class="section-divider"></div>
+  <p>Get release updates, exclusive sneak peeks, and the occasional unhinged author ramble. No spam, just stories.</p>
+
+  <div id="mlb2-37111615" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-37111615">
+    <div class="ml-form-align-center">
+      <div class="ml-form-embedWrapper embedForm" style="background-color:transparent!important;border:none!important;max-width:480px;width:100%;margin:0 auto;">
+        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form" style="padding:0!important;">
+          <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2112372/forms/179301755167704371/subscribe" data-code="" method="post" target="_blank">
+            <div class="ml-form-formContent" style="margin:0!important;">
+              <div class="ml-form-fieldRow ml-last-item" style="margin:0!important;">
+                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+                  <input aria-label="email" aria-required="true" type="email" class="form-control nl-input" name="fields[email]" placeholder="your@email.com" autocomplete="email">
+                  <input type="hidden" name="ml-submit" value="1">
+                  <input type="hidden" name="anticsrf" value="true">
+                  <button type="submit" class="btn btn-primary" style="border:none;cursor:pointer;">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="ml-form-successBody row-success" style="display:none;text-align:center;padding:20px 0;">
+          <p style="color:var(--ink);font-size:16px;">Thank you! You've successfully joined the list. &#127881;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>function ml_webform_success_37111615(){var $=ml_jQuery||jQuery;$('.ml-subscribe-form-37111615 .row-success').show();$('.ml-subscribe-form-37111615 .row-form').hide();}</script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
+  <script>fetch("https://assets.mailerlite.com/jsonp/2112372/forms/179301755167704371/takel")</script>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="parch-quill.png" alt="Jenner Reed" style="display:block;width:340px;max-width:80%;height:auto;margin:0 auto 12px;">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="books.html">Books</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://www.instagram.com/jenner_reed" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <p>&copy; 2026 Jenner Reed. All rights reserved. Stories Worth Falling Into.</p>
+</footer>
+
+</body>
+</html>
