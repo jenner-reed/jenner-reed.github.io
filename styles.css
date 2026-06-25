@@ -379,3 +379,29 @@ footer p { color: var(--mauve); font-size: 13px; }
 .arc-howto p { color: var(--ink); font-size: 15px; line-height: 1.7; }
 .arc-form-wrap { max-width: 520px; margin: 0 auto; background: var(--card); border: 1px solid var(--gold); border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 10px 40px rgba(27,12,10,0.06); }
 .arc-form-wrap h2 { font-family: var(--serif); font-size: 28px; font-weight: 600; color: var(--ink); margin-bottom: 24px; }
+
+/* ---------- DECORATIVE SIDE STRIPS (faint pattern margins) ---------- */
+/* Faint gold pattern down the far left and right edges, framing content.
+   Shows on wide screens only; hidden below 950px so mobile stays clean.
+   Requires pattern.png in the same folder. */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 160px;
+  background-image: url('pattern.png');
+  background-repeat: repeat;
+  background-size: 240px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+body::before { left: 0; }
+body::after  { right: 0; }
+/* keep all content above the strips */
+nav, section, footer, .page-header { position: relative; z-index: 1; }
+/* hide on narrow screens so content isn't squeezed */
+@media (max-width: 950px) {
+  body::before, body::after { display: none; }
+}
