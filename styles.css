@@ -389,19 +389,19 @@ body::before, body::after {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 160px;
+  width: 340px;
   background-image: url('pattern.png');
   background-repeat: repeat;
   background-size: 240px;
-  opacity: 0.5;
+  opacity: 0.85;
   pointer-events: none;
   z-index: 0;
 }
 body::before { left: 0; }
 body::after  { right: 0; }
 /* keep all content above the strips */
-nav, section, footer, .page-header { position: relative; z-index: 1; }
+section, footer, .page-header { position: relative; z-index: 1; }
 /* hide on narrow screens so content isn't squeezed */
-@media (max-width: 950px) {
+@media (max-width: 1300px) {
   body::before, body::after { display: none; }
 }
