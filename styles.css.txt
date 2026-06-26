@@ -401,7 +401,7 @@ body::before { left: 0; }
 body::after  { right: 0; }
 /* keep nav and actual content above the strips; strips sit above section
    background fills so they show on every page, not just the transparent hero */
-nav { position: relative; z-index: 3; }
+nav { z-index: 1000; }
 section > *, .page-header > * { position: relative; z-index: 2; }
 body::before, body::after { z-index: 1 !important; }
 /* hide on narrower screens so wide strips don't crowd content */
